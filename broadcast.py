@@ -49,10 +49,10 @@ def get_footer():
     # last = tr_elements[:][0].text_content().str.contains("Total number of confirmed")
     last = tr_elements[footer_index]
     last_row[0][1].append(str())
-    last_row[1][1].append(str(last[0].text_content()).strip())
-    last_row[2][1].append(str(last[1].text_content()).strip())
-    last_row[3][1].append(str(last[2].text_content()).strip())
-    last_row[4][1].append(str(last[3].text_content()).strip())
+    last_row[1][1].append(str(last[1].text_content()).strip())
+    last_row[2][1].append(str(last[2].text_content()).strip())
+    last_row[3][1].append(str(last[3].text_content()).strip())
+    last_row[4][1].append(str(last[4].text_content()).strip())
     print("\nLast Row:\n",last_row) 
     data = { column:data for (column,data) in last_row }
     last_dataframe = pd.DataFrame(data)
