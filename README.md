@@ -7,13 +7,19 @@ The Program is performing two tasks -
 Each state with its corresponding Number of Positives.
 
 2. Creating the Excel Sheet of the Data - 
-The File have 5 Columns - 
-  1. Serial No.
-  2. Name of the State
-  3. Total Confirmed Cases
-  4. Cured/Discharged
-  5. Deaths
- The last rows has the Total number of Confirmed cases, Cured/Discharged and Deaths.
+The File have 5 Columns -
+    
+    i) Serial No.
+    
+    ii) Name of the State
+    
+    iii) Total Confirmed Cases
+    
+    iv) Cured/Discharged
+    
+    v) Deaths
+  
+- The last rows has the Total number of Confirmed cases, Cured/Discharged and Deaths.
 
 ** The Generated File names are corresponding to the Corresponding date,helpful in automation and research.
 
