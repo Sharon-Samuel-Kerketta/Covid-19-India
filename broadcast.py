@@ -53,6 +53,8 @@ def get_footer():
     last_row[2][1].append(str(last[2].text_content()).strip())
     last_row[3][1].append(str(last[3].text_content()).strip())
     last_row[4][1].append(str(last[4].text_content()).strip())
+    last_row[5][1].append(str(last[5].text_content()).strip())
+
     print("\nLast Row:\n",last_row) 
     data = { column:data for (column,data) in last_row }
     last_dataframe = pd.DataFrame(data)
@@ -85,8 +87,12 @@ def get_statewise():
         try:
             col[4][1].append(int(elements[4].text_content()))
         except :
-
             col[4][1].append(None)
+
+        try:
+            col[5][1].append(int(elements[5].text_content()))
+        except :
+            col[5][1].append(None)
         
     return col
 
@@ -112,8 +118,8 @@ def print_viz(dataframe):
     plt.axes(axisbelow=True)
     plt.barh(dataframe.sort_values(dataframe.columns[2])["Name of State / UT"].values,dataframe.sort_values(dataframe.columns[2])[dataframe.columns[2]],color="darkcyan")
     plt.tick_params(size=5,labelsize = 8)
-    plt.xlabel("Confirmed Cases",fontsize=12)
-    plt.title("Top States",fontsize=12)
+    plt.xlabel("Active Cases",fontsize=12)
+    plt.title("No. Of Active Cases",fontsize=12)
     plt.grid(alpha=0.3)
     cases = dataframe[dataframe.columns[2]]
     
