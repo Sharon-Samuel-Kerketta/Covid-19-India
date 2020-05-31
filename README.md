@@ -13,11 +13,13 @@ The File have 5 Columns -
     
     ii) Name of the State
     
-    iii) Total Confirmed Cases
+    iii) Active Cases
     
     iv) Cured/Discharged
     
     v) Deaths
+    
+    vi) Total Confirmed Cases
   
 - The last rows has the Total number of Confirmed cases, Cured/Discharged and Deaths.
 
